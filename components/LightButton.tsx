@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TouchableOpacity, Image, View } from 'react-native';
 import LightOff from '@/assets/app-images/bulb_off.png'
 import LightOn from '@/assets/app-images/bulb_on.png'
 
-export default function LightButton({ onPress }: any) {
-    const [isOn, setIsOn] = useState(false);
+export default function LightButton({ onPress, isOnState }: any) {
+    const [isOn, setIsOn] = useState(isOnState);
+
+    useEffect(() => {
+        setIsOn(isOnState);
+    }, [isOnState]);
 
     const handlePress = () => {
         const newValue = !isOn;

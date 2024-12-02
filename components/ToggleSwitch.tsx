@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { View, TouchableOpacity, StyleSheet, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function ToggleSwitch({ onToggle }: any) {
-    const [isON, setIsON] = useState(false);
+export default function ToggleSwitch({ onToggle, isOnState }: any) {
+    const [isON, setIsON] = useState(isOnState);
     const translateX = new Animated.Value(isON ? 45 : 0);  // For Animation
+
+    useEffect(() => {
+        setIsON(isOnState);
+    }, [isOnState]);
 
     useEffect(() => {
         Animated.timing(translateX, {

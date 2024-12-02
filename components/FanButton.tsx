@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TouchableOpacity, Image, View } from 'react-native';
 import FanOff from '@/assets/app-images/fan_off.png'
 import FanOn from '@/assets/app-images/fan_on.png'
 
-export default function FanButton({ onPress }: any) {
-    const [isOn, setIsOn] = useState(false);
+export default function FanButton({ onPress, isOnState }: any) {
+    const [isOn, setIsOn] = useState(isOnState);
+
+    useEffect(() => {
+        setIsOn(isOnState);
+    }, [isOnState]);
 
     const handlePress = () => {
         const newValue = !isOn;

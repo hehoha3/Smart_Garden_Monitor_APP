@@ -89,7 +89,7 @@ export default function HomeScreen() {
                 <AppGradient colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0.8)"]}>
                     <SafeAreaView className='flex-1 justify-end mt-12'>
 
-                        {/* ----------------------- Soil moisture -----------------------*/}
+                        {/* ----------------------- Water quantity -----------------------*/}
                         <View className='flex-row justify-around items-center mb-6'>
                             <Text className='text-3xl font-bold tracking-tight text-white mr-2'>Water Quantity</Text>
                             <WaveProgress size={150} value={waterQuan_data} outerColor='#178bca' outerTextColor='#178bca' innerTextColor='#a4dbf8' />
