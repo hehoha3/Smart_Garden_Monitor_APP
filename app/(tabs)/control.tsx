@@ -172,7 +172,7 @@ export default function ControlScreen() {
                 <AppGradient colors={["rgba(0, 0, 0, 0.5)", "rgba(0, 0, 0, 0.8)"]}>
                     <SafeAreaView className='flex-1 justify-end'>
                         {/* ----------------------- Set timer -----------------------*/}
-                        <View className='mb-3'>
+                        <View className='mb-9'>
                             <TimePicker title='Pumps' initialTimeOn={initialPumpsTimeOn} initialTimeOff={initialPumpsTimeOff} onTimeSet={handlePumpsTimeSet} />
                             <TimePicker title='Lights' initialTimeOn={initialLightsTimeOn} initialTimeOff={initialLightsTimeOff} onTimeSet={handleLightsTimeSet} />
                             <TimePicker title='Fans' initialTimeOn={initialFansTimeOn} initialTimeOff={initialFansTimeOff} onTimeSet={handleFansTimeSet} />

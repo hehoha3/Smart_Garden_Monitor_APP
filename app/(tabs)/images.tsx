@@ -19,7 +19,7 @@ export default function images() {
                     <SafeAreaView className='flex-1 justify-end mt-12'>
                         {/* ----------------------------- MORNING ----------------------------- */}
                         <View className={`flex-1 justify-center items-center max-h-56 mb-10`}>
-                            <TouchableOpacity onPress={() => router.push('/imagesShow/today_morning')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden'>
+                            <TouchableOpacity onPress={() => router.push('/imagesShow/today_morning')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden border border-black/60'>
                                 {/* Hiển thị hình ảnh nền */}
                                 <ImageBackground
                                     source={morningImg}
@@ -35,7 +35,7 @@ export default function images() {
 
                         {/* ----------------------------- EVERNING ----------------------------- */}
                         <View className={`flex-1 justify-center items-center max-h-56 mb-10`}>
-                            <TouchableOpacity onPress={() => router.push('/imagesShow/today_evening')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden'>
+                            <TouchableOpacity onPress={() => router.push('/imagesShow/today_evening')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden border border-black/60'>
                                 {/* Hiển thị hình ảnh nền */}
                                 <ImageBackground
                                     source={everningImg}
@@ -51,7 +51,7 @@ export default function images() {
 
                         {/* ----------------------------- NEW DAY ----------------------------- */}
                         <View className={`flex-1 justify-center items-center max-h-56 mb-10`}>
-                            <TouchableOpacity onPress={() => router.push('/imagesShow/yesterday')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden'>
+                            <TouchableOpacity onPress={() => router.push('/imagesShow/yesterday')} activeOpacity={0.8} className='w-full h-full rounded-lg overflow-hidden border border-black/60'>
                                 {/* Hiển thị hình ảnh nền */}
                                 <ImageBackground
                                     source={yesterdayImg}

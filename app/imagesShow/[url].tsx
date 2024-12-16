@@ -30,7 +30,7 @@ export default function imagesShow() {
             <ImageBackground source={gardenBackground} resizeMode='cover' className='flex-1'>
                 <AppGradient colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0.8)"]}>
                     <SafeAreaView className='flex-1 justify-end mt-4'>
-                        <Pressable onPress={() => router.back()} className='left-2 z-10'>
+                        <Pressable onPress={() => router.back()} className='left-2 z-10 mb-2'>
                             <AntDesign name='leftcircleo' size={40} color="white" />
                         </Pressable>
                         <FlatList
