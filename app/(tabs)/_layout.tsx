@@ -26,6 +26,16 @@ export default function TabsLayout() {
                     )
                 }}
             />
+
+            <Tabs.Screen
+                name='images'
+                options={{
+                    tabBarLabel: "Images",
+                    tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="leaf" size={24} color={color} />
+                    )
+                }}
+            />
         </Tabs>
     )
 }
