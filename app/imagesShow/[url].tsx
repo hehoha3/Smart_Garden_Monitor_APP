@@ -15,8 +15,10 @@ export default function imagesShow() {
     useEffect(() => {
         const fetchImages = async () => {
             let imageUrls = [];
+            const timestamp = new Date().getTime(); // query string để tránh cache
+            console.log('Timestamp:', timestamp);
             for (let i = 1; i <= 15; i++) {
-                imageUrls.push(`http://192.168.1.29:8080/${url}/image_${i}.jpg`)
+                imageUrls.push(`http://192.168.80.56:8080/${url}/image_${i}.jpg?timestamp=${timestamp}`) // ip Rasp
             }
 
             setImages(imageUrls)

@@ -44,7 +44,7 @@ export default function images() {
                                 >
                                     <View className="absolute inset-0 bg-black opacity-35" />
                                     {/* Hiển thị text trên hình ảnh */}
-                                    <Text className='text-4xl font-bold text-white'>Everning</Text>
+                                    <Text className='text-4xl font-bold text-white'>Afternoon</Text>
                                 </ImageBackground>
                             </TouchableOpacity>
                         </View>
